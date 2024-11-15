@@ -1,0 +1,300 @@
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gubkin Website</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <style>
+        .lang-ru {
+            display: inline;
+        }
+
+        .lang-en {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <img src="/templates/img/photoGub.svg" alt="">
+            <h1 class="titleGub">
+                <span class="lang-ru">Губкин Данил Иванович</span>
+                <span class="lang-en" style="display: none;">Danil Ivanovich Gubkin</span>
+            </h1>
+            <p class="welcome-text">
+                <span class="lang-ru">Добро пожаловать на мой сайт. Я студент 4 курса Колледжа ВятГУ, находящегося в городе Киров, обучаюсь по специальности “Информационные системы и программирование”. Родился я в маленьком городе Коряжма, что в Архангельской области, до 17 лет жил там и учился в школе.</span>
+                <span class="lang-en" style="display: none;">Welcome to my website. I am a 4th-year student at VyatSU College in Kirov, studying 'Information Systems and Programming.' I was born in the small town of Koryazhma in the Arkhangelsk region, where I lived until I turned 17, before moving to pursue further education.</span>
+            </p>
+            <p class="projects-text">
+                <a href="#titleDoodleJump">
+                    <span class="project-item">
+                        <span class="lang-ru">Мои проекты:</span>
+                        <span class="lang-en" style="display: none;">My Projects:</span>
+                    </span>
+                </a> 
+                <span class="lang-ru">Аналог игры “Doodle Jump”, ИС для магазина одежды, Телеграмм бот с расписанием.</span>
+                <span class="lang-en" style="display: none;">A clone of the "Doodle Jump" game, an Information System for a clothing store, a Telegram bot with scheduling.</span>
+            </p>
+            <p class="achievement-text">
+                <a href="#achievement">
+                    <span class="achievement-item">
+                        <span class="lang-ru">Личные достижения</span>
+                        <span class="lang-en" style="display: none;">Personal Achievements</span>
+                    </span>
+                </a>
+            </p>
+            <p class="form-text">
+                <a href="#overlay-content">
+                    <span class="form-item">
+                        <span class="lang-ru">Форма для отправки сообщений</span>
+                        <span class="lang-en" style="display: none;">Message form</span>
+                    </span>
+                </a>
+            </p>  
+            <p class="my-social-networks-text">
+                <a href="#overlay-content">
+                    <span class="my-social-networks-item">
+                        <span class="lang-ru">Социальные сети для связи со мной</span>
+                        <span class="lang-en" style="display: none;">Social networks to connect with me</span>
+                    </span>
+                </a>
+            </p> 
+            <h1 class="titleDoodleJump" id="titleDoodleJump">
+                <span class="lang-ru">Аналог игры “Doodle Jump”</span>
+                <span class="lang-en" style="display: none;">"Doodle Jump" Game Clone</span>
+            </h1> 
+            <p class="doodle-text">
+                <span class="lang-ru">Doodle Jump - первая разработанная мной программа, имеющая графический интерфейс. Правила игры предельно просты: играя за упавшую с неба звезду, наша задача помочь ей попась обратно на небо, поднимаясь прыжками по платформам. Игра бесконечна, что позволяет совершенстовать свой навык подъема. Если персонаж упал и игра закончилась, то ее всегда можно перезапустить по нажатию кнопки в левом верхнем углу. Управление звездой производится клавишами A(влево) и D(вправо). Игра расчитана на детей от 3 лет, благодаря ей они смогут развить мелкую моторику, а также внимательность и реакцию.</span>
+                <span class="lang-en" style="display: none;">Doodle Jump is the first program I developed with a graphical interface. The game rules are very simple: playing as a falling star, our goal is to help it get back to the sky by jumping on platforms. The game is endless, allowing you to improve your climbing skills. If the character falls and the game ends, it can always be restarted by pressing the button in the top left corner. The star is controlled using the A (left) and D (right) keys. The game is designed for children from 3 years old, as it helps them develop fine motor skills, attention, and reaction time.</span>
+            </p>
+        </div>
+    </div>
+    <div class="bod">  
+        <div class="doodlephoto1">
+            <img src="/templates/img/doodlephoto1.svg" alt="">
+            <p class="under-doodle-photo1-text">
+                <span class="lang-ru">Процесс игры “Doodle Jump”</span>
+                <span class="lang-en" style="display: none;">Doodle Jump Game Process</span>
+            </p> 
+        </div>
+        <div class="doodlephoto2">
+            <img src="/templates/img/doodlephoto2.svg" alt=""> 
+            <p class="under-doodle-photo2-text">
+                <span class="lang-ru">Поражение в “Doodle Jump”</span>
+                <span class="lang-en" style="display: none;">Defeat in “Doodle Jump”</span>
+            </p>
+        </div>
+    </div>
+    <div class="is-shop">
+        <h1 class="titleis-shop">
+            <span class="lang-ru">Информационная система для магазина одежды</span>
+            <span class="lang-en" style="display: none;">Information System for Clothing Store</span>
+        </h1> 
+        <p class="is-shop-text">
+            <span class="lang-ru">ИС для магазина одежды - программа для кассового аппарата, которая ведет собственный учет товаров, а также собирает статистику о продажах, создает отчетность о выручке и прибыли. Этот проект подключен к базе данных PostgreSQL, что позволяет хранить  данные о товарах, их количестве и продажах. В программе реализована система оплаты, но условная, таким образом деньги, конечно, списываться не будут, но если товара нет на складе(в базе), то купить его будет невозможно. Внутри программы есть функция поступления, позволяющая не прибегая к базе данных вносить в нее данные о поступлении определенного количества товара на склад, а также корректировать цены. Также, внутри программы есть возможность печати отчетов о прибыли. Если покупатель отказался от покупки товара, то продавец может “отменить” чек, удалив все позиции товаров.   </span>
+            <span class="lang-en" style="display: none;">The Information System for a clothing store is a program for a cash register that keeps track of inventory, collects sales statistics, and generates reports on revenue and profit. This project is connected to a PostgreSQL database, allowing it to store data about products, their quantity, and sales. The program has a payment system, but it's a mock one, meaning no actual money is deducted. However, if an item is out of stock (in the database), it cannot be purchased. The program includes an incoming stock feature, which allows entering the data about the arrival of a certain quantity of goods into the warehouse without accessing the database, as well as adjusting prices. Additionally, the program provides the ability to print profit reports. If a customer cancels a purchase, the seller can "cancel" the receipt by deleting all product entries. The system also allows for product categorization, making it easier for employees to locate and manage inventory.</span>
+        </p>
+    </div>
+    <div class="photos-is">  
+        <div class="is-shop-photo1">
+            <img src="/templates/img/isshopphoto1.svg" alt="">
+            <p class="under-is-shop-photo1-text">
+                <span class="lang-ru">Главное меню “ИС для магазина одежды”</span>
+                <span class="lang-en" style="display: none;">Main Menu of "Information System for Clothing Store"</span>
+            </p> 
+        </div>
+    </div>
+    <div class="photos-container">
+        <div class="is-shop-photo2">
+            <img src="/templates/img/isshopphoto2.svg" alt="">
+            <p class="under-is-shop-photo2-text">
+                <span class="lang-ru">Окно поступления “ИС для магазина одежды”</span>
+                <span class="lang-en" style="display: none;">"Incoming Window" of Information System for Clothing Store</span>
+            </p>
+        </div>
+        <div class="photos-group">
+            <div class="is-shop-photo3">
+                <img src="/templates/img/isshopphoto3.svg" alt="">
+                <p class="under-is-shop-photo3-text">
+                    <span class="lang-ru">Оплата “ИС для магазина одежды”</span>
+                    <span class="lang-en" style="display: none;">Payment in "Information System for Clothing Store"</span>
+                </p>
+            </div>
+            <div class="is-shop-photo4">
+                <img src="/templates/img/isshopphoto4.svg" alt="">
+                <p class="under-is-shop-photo4-text">
+                    <span class="lang-ru">Отчеты “ИС для магазина одежды”</span>
+                    <span class="lang-en" style="display: none;">Reports in "IS for Clothing Store"</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="telegram-bot">
+        <h1 class="title-telega-bot">
+            <span class="lang-ru">Телеграмм бот с расписанием</span>
+            <span class="lang-en" style="display: none;">Telegram Bot with Schedule</span>
+        </h1> 
+        <p class="telega-bot-text">
+            <span class="lang-ru">Телеграмм бот с расписанием - бот, который создавался, как аналог ВятГУ бот. Для этого проекта было создано 2 кода: сам бот и код-парсинг Excel файлов с расписанием с занесением всех данных в базу данных PostgreSQL, откуда бот при пользовании берет информацию для распределения ее по группам. Отличительной особеностью нашего бота от бота ВятГУ является наличие функции уведомлений о парах за неделю, за день и за час.</span>
+            <span class="lang-en" style="display: none;">The Telegram bot with a schedule is a bot that was created as an alternative to the VyatSU bot. For this project, two codes were developed: the bot itself and the code for parsing Excel files with the schedule and inserting all the data into a PostgreSQL database, from which the bot retrieves the information to distribute it across groups. The distinguishing feature of our bot compared to the VyatSU bot is the presence of notification functions about upcoming classes for the week, the day, and the hour.</span>
+        </p>
+    </div>
+    <div class="photos-telega-container">
+        <div class="telega-photo">
+            <img src="/templates/img/telegaphoto1.svg" alt="">
+            <p class="under-telega-photo-text">
+                <span class="lang-ru">Расписание “ТГ бот для расписания”</span>
+                <span class="lang-en" style="display: none;">Schedule in "TG Bot for Schedule"</span>
+            </p>
+        </div>
+        <div class="photos-telega-group">
+            <div class="telega-photo2">
+                <img src="/templates/img/telegaphoto2.svg" alt="">
+                <p class="under-telega-photo2-text">
+                    <span class="lang-ru">Уведомления “ТГ бот для расписания”</span>
+                    <span class="lang-en" style="display: none;">Notifications in "TG Bot for Schedule"</span>
+                </p>
+            </div>
+            <div class="telega-photo3">
+                <img src="/templates/img/telegaphoto3.svg" alt="">
+                <p class="under-telega-photo3-text">
+                    <span class="lang-ru">Процесс работы бота</span>
+                    <span class="lang-en" style="display: none;">Process of the bot working</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="achievement" id="achievement">
+        <h1 class="title-achievement">
+            <span class="lang-ru">Личные достижения</span>
+            <span class="lang-en" style="display: none;">Personal Achievements</span>
+        </h1> 
+        <p class="achievement-text">
+            <span class="lang-ru">Одним из своих главных достижений в жизни я считаю то, что в самый плохой и тяжелый момент своей жизни я смог найти в себе силы поговорить с самым своим близким другом и простить его, не смотря ни на что.</span>
+            <span class="lang-en" style="display: none;">One of my greatest achievements in life is that, in the darkest and most difficult moment of my life, I found the strength to talk to my closest friend and forgive him, no matter what. This experience taught me the true value of forgiveness and the importance of preserving relationships despite challenges.</span>
+        </p>
+    </div>
+
+    <div class="photo-achievement-container">
+        <div class="achievement-photo">
+            <img src="/templates/img/achievementphoto.svg" alt="">
+            <p class="under-achievement-photo-text">
+                <span class="lang-ru">Лучшие друзья и лучшее лето 2024</span>
+                <span class="lang-en" style="display: none;">Best friends and the best summer of 2024</span>
+            </p>
+        </div>
+    </div>
+
+    <div class="form-container">
+        <h1>
+            <span class="lang-ru">Отправить сообщение</span>
+            <span class="lang-en" style="display: none;">Send a Message</span>
+        </h1>
+    
+        <div id="message-form">
+            <form id="form" action="/" method="post" onsubmit="handleSubmit(event)">
+                <label for="email">
+                    <span class="lang-ru">Email:</span>
+                    <span class="lang-en" style="display: none;">Email:</span>
+                </label>
+                <input type="email" id="email" name="email" placeholder="Введите ваш email" required>
+                <br>
+                <label for="message">
+                    <span class="lang-ru">Сообщение:</span>
+                    <span class="lang-en" style="display: none;">Message:</span>
+                </label>
+                <textarea id="message" name="message" placeholder="Введите ваше сообщение" required></textarea>
+                <br>
+                <button type="submit">
+                    <span class="lang-ru">Отправить</span>
+                    <span class="lang-en" style="display: none;">Send</span>
+                </button>
+            </form>
+        </div>
+    
+        <div id="confirmation-message" style="display: none;">
+            <p>
+                <span class="lang-ru">Сообщение отправлено!</span>
+                <span class="lang-en" style="display: none;">Message sent!</span>
+            </p>
+        </div>
+    </div>
+    
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();  // Предотвращаем перезагрузку страницы
+    
+            // Отправка данных через AJAX
+            const formData = new FormData(document.getElementById("form"));
+            fetch("/", {
+                method: "POST",
+                body: formData,
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Если сервер возвращает успешный ответ, показываем сообщение
+                if (data.status === "success") {
+                    document.getElementById("confirmation-message").style.display = "block";
+    
+                    // Очищаем форму
+                    document.getElementById("form").reset();
+    
+                    // Скрываем сообщение подтверждения через 3 секунды
+                    setTimeout(() => {
+                        document.getElementById("confirmation-message").style.display = "none";
+                    }, 3000); // Сообщение скрывается через 3 секунды
+                }
+            })
+            .catch(error => console.error('Error:', error));
+        }
+    </script>
+
+    <div class="photo-under-container">
+        <div class="under-photo">
+            <img src="/templates/img/under.svg" alt="">
+        </div>
+        <div id="overlay-content" class="overlay-content">
+            <p class="social-text">
+                <span class="lang-ru">Социальные сети для связи со мной</span>
+                <span class="lang-en" style="display: none;">Social networks to connect with me</span>
+            </p>
+            <!-- Фото социальных сетей с ссылками -->
+            <div class="overlay-photo">
+                <a href="https://vk.com/toxicsl" target="_blank">
+                    <img src="/templates/img/vkicon.svg" alt="VK">
+                </a>
+            </div>
+            <div class="overlay-photo">
+                <a href="https://t.me/Toxictvk" target="_blank">
+                    <img src="/templates/img/tgicon.svg" alt="Telegram">
+                </a>
+            </div>
+            <div class="overlay-photo">
+                <a href="https://github.com/Toxicmxtr?tab=projects" target="_blank">
+                    <img src="/templates/img/githubicon.svg" alt="GitHub">
+                </a>
+            </div>
+        </div>
+    </div> 
+
+    <button id="lang-toggle">RU/EN</button>
+
+    <script>
+        document.getElementById("lang-toggle").addEventListener("click", function() {
+            var ruElements = document.querySelectorAll(".lang-ru");
+            var enElements = document.querySelectorAll(".lang-en");
+            
+            ruElements.forEach(function(element) {
+                element.style.display = element.style.display === "none" ? "inline" : "none";
+            });
+            enElements.forEach(function(element) {
+                element.style.display = element.style.display === "none" ? "inline" : "none";
+            });
+        });
+    </script>
+</body>
+</html>
